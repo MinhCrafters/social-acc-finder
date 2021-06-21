@@ -1,8 +1,3 @@
-"""SocialAccFinder Notify Module
-
-This module defines the objects for notifying the caller about the
-results of queries.
-"""
 from result import QueryStatus
 from colorama import Fore, Style, init
 from blessed import Terminal
