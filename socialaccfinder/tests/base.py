@@ -1,7 +1,3 @@
-"""SocialAccFinder Base Tests
-
-This module contains various utilities for running tests.
-"""
 import os
 import os.path
 import unittest
