@@ -24,12 +24,12 @@ class SiteInformation():
 
 
 class SitesInformation():
-    def __init__(self, data_file_path='resources/data.json'):
+    def __init__(self, data_file_path = None):
 
-        if not os.path.exists(data_file_path):
+        if data_file_path is None:
             r = requests.get("https://raw.githubusercontent.com/MinhCrafters/social-acc-finder/master/socialaccfinder/resources/data.json", allow_redirects=True)
-            open("resources/data.json", "wb").write(r.content)
-            data_file_path = 'resources/data.json'
+            open("socialaccfinder/resources/data.json", "wb").write(r.content)
+            data_file_path = 'socialaccfinder/resources/data.json'
 
         # Ensure that specified data file has correct extension.
         if not data_file_path.lower().endswith(".json"):
