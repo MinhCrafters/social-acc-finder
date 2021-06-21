@@ -1,7 +1,3 @@
-"""SocialAccFinder Tests
-
-This module contains various tests.
-"""
 from tests.base import SocialAccFinderBaseTest
 import unittest
 
