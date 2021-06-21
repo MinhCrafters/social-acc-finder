@@ -1,11 +1,4 @@
-#! /usr/bin/env python3
-
-"""
-SocialAccFinder: Find Usernames Across Social Networks Module
-
-This module contains the main logic to search for usernames at social
-networks.
-"""
+#!/usr/bin/python3
 
 import csv
 import os
