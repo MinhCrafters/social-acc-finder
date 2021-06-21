@@ -18,7 +18,7 @@ from notify import QueryNotifyPrint
 from sites  import SitesInformation
 
 module_name = "SocialAccFinder: Find Usernames Across Social Networks"
-__version__ = "0.14.0"
+__version__ = "0.1"
 
 class SocialAccFinderFuturesSession(FuturesSession):
     def request(self, method, url, hooks={}, *args, **kwargs):
