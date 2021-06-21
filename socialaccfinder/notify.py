@@ -1,8 +1,5 @@
 from result import QueryStatus
 from colorama import Fore, Style, init
-from blessed import Terminal
-
-term = Terminal()
 
 class QueryNotify():
     def __init__(self, result=None):
@@ -38,13 +35,13 @@ class QueryNotifyPrint(QueryNotify):
         return
 
     def start(self, message):
-        print(term.center('  ____             _       _    _            _____ _           _           '))
-        print(term.center(' / ___|  ___   ___(_) __ _| |  / \   ___ ___|  ___(_)_ __   __| | ___ _ __ '))
-        print(term.center(" \___ \ / _ \ / __| |/ _` | | / _ \ / __/ __| |_  | | '_ \ / _` |/ _ \ '__|"))
-        print(term.center('  ___) | (_) | (__| | (_| | |/ ___ \ (_| (__|  _| | | | | | (_| |  __/ |   '))
-        print(term.center(' |____/ \___/ \___|_|\__,_|_/_/   \_\___\___|_|   |_|_| |_|\__,_|\___|_|   '))
-        print(term.center('                                                                           '))
-        print(term.center('by MinhCrafters'))
+        print('  ____             _       _    _            _____ _           _           ')
+        print(' / ___|  ___   ___(_) __ _| |  / \   ___ ___|  ___(_)_ __   __| | ___ _ __ ')
+        print(" \___ \ / _ \ / __| |/ _` | | / _ \ / __/ __| |_  | | '_ \ / _` |/ _ \ '__|")
+        print('  ___) | (_) | (__| | (_| | |/ ___ \ (_| (__|  _| | | | | | (_| |  __/ |   ')
+        print(' |____/ \___/ \___|_|\__,_|_/_/   \_\___\___|_|   |_|_| |_|\__,_|\___|_|   ')
+        print('                                                                           ')
+        print('by MinhCrafters')
         title = "Checking username"
         if self.color:
             print(Style.BRIGHT + Fore.GREEN + "[" +
